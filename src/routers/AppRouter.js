@@ -7,8 +7,6 @@ import Header from '../components/Header';
 import HelpPage from '../components/HelpPage';
 import NotFoundPage from '../components/NotFoundPage';
 
-
-
 const AppRouter = () => (
     <BrowserRouter>
         <div>
@@ -16,7 +14,6 @@ const AppRouter = () => (
             <Switch>
                 <Route exact path="/" component={ExpenseDashboardPage} />
                 <Route path="/create" component={AddExpensePage} />
-                <Route path="/edit" component={EditExpensePage} />
                 <Route path="/help" component={HelpPage} />
                 <Route component={NotFoundPage} />
             </Switch>
