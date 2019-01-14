@@ -1,9 +1,16 @@
 import uuid from 'uuid';
-//
-//Action genorators
-//
 
-export const addExpense = ({ description = '', note = '', amount = 0, createdAt = 0 }) => ({
+//Action genorators
+
+//ADD_EXPENSE
+export const addExpense = (
+    {
+        description = '',
+        note = '',
+        amount = 0,
+        createdAt = 0
+    } = {}
+) => ({
     type: 'ADD_EXPENSE',
     expense: {
         id: uuid(),
@@ -11,7 +18,6 @@ export const addExpense = ({ description = '', note = '', amount = 0, createdAt 
         note,
         amount,
         createdAt
-
     }
 });
 //REMOVE_EXPENSE
