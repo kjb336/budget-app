@@ -6,9 +6,10 @@ module.exports = (env) => {
     const CSSExtract = new MiniCssExtractPlugin({ filename: 'styles.css' });
     console.log('env', env);
     return {
+        mode: 'none',
         entry: './src/app.js',
         output: {
-            path: path.join(__dirname, 'public'),
+            path: path.join(__dirname, 'public', 'dist'),
             filename: 'bundle.js'
         },
         module: {
@@ -41,7 +42,8 @@ module.exports = (env) => {
         devServer: {
             contentBase: path.join(__dirname, 'public'),
             historyApiFallback: true,
-            disableHostCheck: true
+            disableHostCheck: true,
+            publicPath: '/dist/'
         },
         performance: { hints: false }
     };
