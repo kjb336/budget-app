@@ -6,7 +6,7 @@ exports[`should render Header correctly 1`] = `
     Expensify
   </h1>
   <NavLink
-    activeClassName="is-active "
+    activeClassName="is-active"
     aria-current="page"
     exact={true}
     to="/"
@@ -14,18 +14,11 @@ exports[`should render Header correctly 1`] = `
     Dashboard
   </NavLink>
   <NavLink
-    activeClassName="is-active "
+    activeClassName="is-active"
     aria-current="page"
     to="/create"
   >
     Create Expense
-  </NavLink>
-  <NavLink
-    activeClassName="is-active "
-    aria-current="page"
-    to="/help"
-  >
-    Help
   </NavLink>
 </header>
 `;
